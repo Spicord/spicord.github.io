@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.754902470857">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.775101718812">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>BanAnnouncer</title>
-    <meta name="title" content="BanAnnouncer">
-    <meta name="description" content="BanAnnouncer is a plugin whose purpose is announcing in-game punishments to your Discord server.">
+    <title>Addon creation</title>
+    <meta name="title" content="Addon creation">
+    <meta name="description" content="Maven">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://spicord.org/addons/banannouncer/">
+    <link rel="canonical" href="https://spicord.org/development/addon-creation/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://spicord.org/addons/banannouncer/">
-    <meta property="og:title" content="BanAnnouncer">
-    <meta property="og:description" content="BanAnnouncer is a plugin whose purpose is announcing in-game punishments to your Discord server.">
+    <meta property="og:url" content="https://spicord.org/development/addon-creation/">
+    <meta property="og:title" content="Addon creation">
+    <meta property="og:description" content="Maven">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://spicord.org/addons/banannouncer/">
-    <meta property="twitter:title" content="BanAnnouncer">
-    <meta property="twitter:description" content="BanAnnouncer is a plugin whose purpose is announcing in-game punishments to your Discord server.">
+    <meta property="twitter:url" content="https://spicord.org/development/addon-creation/">
+    <meta property="twitter:title" content="Addon creation">
+    <meta property="twitter:description" content="Maven">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.754902470857" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.775101718812" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.754902470857" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.775101718812" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.754902470857" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.775101718812" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.775101718812" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -175,45 +176,57 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="banannouncer" class="break-words">
+<doc-anchor-target id="addon-creation" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#banannouncer">#</doc-anchor-trigger>
-        <span>BanAnnouncer</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#addon-creation">#</doc-anchor-trigger>
+        <span>Addon creation</span>
     </h1>
 </doc-anchor-target>
-<p><a href="https://www.spigotmc.org/resources/banannouncer-discord.64976/" target="_blank" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-    <span>Download</span>
-</a> <a href="https://github.com/Spicord/BanAnnouncer/" target="_blank" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-    <span>Source Code</span>
-</a> <a href="https://discord.gg/TGBCNsan2j" target="_blank" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-    <span>Discord</span>
-</a></p>
-<p>BanAnnouncer is a plugin whose purpose is announcing in-game punishments to your Discord server. With this plugin, you can easily promote transparency and fairness within your community by ensuring that all members are aware of any rule violations and the consequences that have been imposed.</p>
-<p>The following announcement types are supported:</p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Punishment Plugin</th>
-<th>Announcement Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AdvancedBan, LibertyBans, LiteBans</td>
-<td>ban, tempban, banip, tempbanip, mute, tempmute, warn, tempwarn, kick, unban, unbanip, unmute, unwarn</td>
-</tr>
-<tr>
-<td>AdvancedBan</td>
-<td>note, unnote</td>
-</tr>
-<tr>
-<td>BetterJails, Essentials</td>
-<td>jail, unjail</td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>Maven</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markup"><code v-pre class="language-markup">&lt;dependency&gt;
+    &lt;groupId&gt;org.spicord&lt;/groupId&gt;
+    &lt;artifactId&gt;spicord-common&lt;/artifactId&gt;
+    &lt;version&gt;5.3.0&lt;/version&gt;
+    &lt;scope&gt;provided&lt;/scope&gt;
+&lt;/dependency&gt;</code></pre>
+</doc-codeblock></div>
+<p>Addon class creation</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">import org.spicord.api.addon.SimpleAddon;
+import org.spicord.bot.DiscordBot;
+
+import net.dv8tion.jda.api.JDA;
+
+public class YourAddon extends SimpleAddon {
+
+    public YourAddon() {
+        super(&quot;YourAddonName&quot;, &quot;your_addon_id&quot;, &quot;TheAuthor&quot;);
+    }
+
+    @Override
+    public void onReady(DiscordBot bot) {
+        // If you know how to use the JDA api you can go ahead and use it as usual.
+        JDA jda = bot.getJda();
+    }
+}</code></pre>
+</doc-codeblock></div>
+<p>Example addon registration with a spigot plugin</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">import org.spicord.SpicordLoader;
+
+public class YourPlugin extends JavaPlugin {
+
+    @Override
+    public void onEnable() {
+        YourAddon addonInstance = new YourAddon();
+
+        SpicordLoader.addStartupListener(spicord -&gt; {
+            spicord.getAddonManager().registerAddon(addonInstance);
+        });
+    }
+}</code></pre>
+</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -223,20 +236,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../getting-started/external-addons/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../knownissues/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">External addons</span>
+                                                <span class="block mt-1">Troubleshooting</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../knownissues/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../addons/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Troubleshooting</span>
+                                                <span class="block mt-1">List of addons</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -251,7 +264,7 @@
                                     <ul class="flex flex-wrap items-center text-sm">
                                     </ul>
                                 </div>
-                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2023. All rights reserved.</p></div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2024. All rights reserved.</p></div>
                             </footer>
                         </div>
                     </div>
@@ -280,6 +293,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "BanAnnouncer", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Addon creation", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
